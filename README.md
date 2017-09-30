@@ -7,7 +7,7 @@ The request / document based Node.js server
 // On the server side:
 
 const Angel = require('../src/angel.js').instance(8083);
-//  8083 must be a unique porn number for this node instance
+//  8083 must be a unique port number for this node instance
 
 Angel.createServer(80, function (request, document) {
     document.html('<a id="hello">Hello word...</a>');
