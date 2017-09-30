@@ -1,4 +1,4 @@
-const Angel = require('../../src/angel.js').instance(8083); //  <- unique port number fot this node instance
+const Angel = require('../../src/angel.js').instance(8083); //  <- unique port number for this node instance
 let times = 0;
 
 Angel.createServer(80, function (request, document) {

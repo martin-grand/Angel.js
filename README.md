@@ -7,10 +7,10 @@ The request / document based Node.js server
 // On the server side:
 
 const Angel = require('../src/angel.js').instance(8083);
-//  8083 must be a unique port number for this node instance
+//  8083 can be any unique port number for this node instance
 
 Angel.createServer(80, function (request, document) {
-    document.html('<a id="hello">Hello word...</a>');
+    document.html('<a id="hello">Hello word!</a>');
     document.render();
     document.onReady(() => {
         document.find('#hello').on('click', function () {
@@ -49,7 +49,7 @@ document.head(); // returns '<link rel="shortcut icon" href="/favicon.ico" /><ti
 
 ### document.html
 ```javascript
-document.html('<html><head><title>Hello!</title></head><body>Hello word...</body></html>'); // overrides all!
+document.html('<html><head><title>Hello!</title></head><body>Hello word...</body></html>'); // overrides all
 document.html(); // returns '<html><head><title>Hello!</title></head><body>Hello word...</body></html>'
 document.title('See me!');
 document.html(); // returns '<html><head><title>See me!</title></head><body>Hello word...</body></html>'
@@ -57,30 +57,20 @@ document.html(); // returns '<html><head><title>See me!</title></head><body>Hell
 
 ## Document events
 
-### document.onReady
+### document.on('ready', fn)
 ```javascript
-document.onReady(function(){
-    console.log('Client side has rendered!');
+document.on('ready', function(){
+    console.log('Client side has been rendered!');
 });
 ```
 
 ### document.eval
 ```javascript
 function ga_push(value) {
-    document.eval(`ga.push('${value}')`); // eval just after document ready event.
+    document.eval(`ga.push('${value}')`); // eval after document ready.
 }
 
 document.eval('new Date()').then(function(clientTime){
     console.log(clientTime);
 });
-```
-
-
-### document.global
-```javascript
-document.global('myGlobalFunction', function(attributes){
-    console.log('myGlobalFunction called from client side');
-});
-
-document.global('myGlobalVariable', 'foo');
 ```
