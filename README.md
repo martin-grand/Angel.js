@@ -74,3 +74,72 @@ document.eval('new Date()').then(function(clientTime){
     console.log(clientTime);
 });
 ```
+
+## DOM elements
+### document.find(selector)
+This will return a dom element
+
+### element.on
+```javascript
+
+```
+
+### element.html
+```javascript
+
+```
+
+### element.text
+```javascript
+
+```
+
+### element.val
+```javascript
+
+```
+
+### element.attr
+```javascript
+
+```
+
+### element.data
+```javascript
+
+```
+
+### element.hasClass
+```javascript
+
+```
+
+### element.addClass
+```javascript
+
+```
+
+### element.removeClass
+```javascript
+
+```
+
+### element.toggleClass
+```javascript
+
+```
+
+### element.parent
+```javascript
+
+```
+
+### element.each
+```javascript
+
+```
+
+### element.file
+```javascript
+
+```
