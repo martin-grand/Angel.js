@@ -143,3 +143,8 @@ This will return a dom element
 ```javascript
 
 ```
+
+### element.getFormData
+```javascript
+
+```
