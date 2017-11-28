@@ -1,12 +1,16 @@
 # Angel.js (under developement!)
 The request / document based Node.js server
+## Install
+```
+npm install angel-server --save
+```
 
 ## Example
 
 ```javascript
 // On the server side:
 
-const Angel = require('../src/angel.js').instance(8083);
+const Angel = require('angel-server').instance(8083);
 //  8083 can be any unique port number for this node instance
 
 Angel.createServer(80, function (request, document) {
