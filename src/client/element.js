@@ -33,8 +33,8 @@ var Element = function ($element) {
 
     _self[elementMethodType.simple] = function (data, callback) {
         if (data.attribute) {
-            if (data.attribute.length > 1) {
-                _self.$element[data.method].apply(this, data.attribute);
+            if (typeof data.attribute === 'object') {
+                _self.$element[data.method](data.attribute[0], data.attribute[1]);
             } else {
                 _self.$element[data.method](data.attribute);
             }
