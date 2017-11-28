@@ -1,6 +1,5 @@
-# Angel.js
+# Angel.js (under developement!)
 The request / document based Node.js server
-under developement!
 
 ## Example
 
