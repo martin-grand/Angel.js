@@ -1,8 +1,17 @@
 {
   "name": "angel-server",
-  "version": "0.0.31",
+  "version": "0.0.32",
   "main": "src/angel.js",
   "description": "The request / document based Node.js server",
+  "author": {
+    "name": "Martin Grand",
+    "email": "marton.nagy@martingrand.com",
+    "url": "martingrand.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/martin-grand/Angel.js"
+  },
   "dependencies": {
     "uglify-js": "^3.0.27",
     "ws": "^3.1.0"
