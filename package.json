@@ -1,6 +1,7 @@
 {
-  "name": "Angel.js",
-  "version": "0.0.1",
+  "name": "angel-server",
+  "version": "0.0.2",
+  "main": "src/angel.js",
   "description": "The request / document based Node.js server",
   "dependencies": {
     "uglify-js": "^3.0.27",

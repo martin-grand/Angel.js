@@ -33,7 +33,11 @@ var Element = function ($element) {
 
     _self[elementMethodType.simple] = function (data, callback) {
         if (data.attribute) {
-            _self.$element[data.method](data.attribute);
+            if (data.attribute.length > 1) {
+                _self.$element[data.method].apply(this, data.attribute);
+            } else {
+                _self.$element[data.method](data.attribute);
+            }
             callback();
         } else {
             callback(_self.$element[data.method]());

@@ -63,7 +63,7 @@ var Document = (function () {
 
     };
 
-    _self.script = function (script, callback) {
+    _self.execute = function (script, callback) {
         callback(window.eval(script));
     };
 

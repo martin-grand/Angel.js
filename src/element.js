@@ -68,9 +68,8 @@ class Element {
         return this.sendActionPromise('val', attribute);
     }
 
-    attr(attribute) {
-        // todo handle this have 2 attributes. (name, value)
-        return this.sendActionPromise('attr', attribute);
+    attr() {
+        return this.sendActionPromise('attr', arguments);
     }
 
     data(attribute) {

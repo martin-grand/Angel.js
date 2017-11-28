@@ -1,5 +1,6 @@
 # Angel.js
 The request / document based Node.js server
+under developement!
 
 ## Example
 
@@ -68,13 +69,13 @@ document.on('ready', function(){
 });
 ```
 
-### document.eval
+### document.execute
 ```javascript
 function ga_push(value) {
-    document.eval(`ga.push('${value}')`); // eval after document ready.
+    document.execute(`ga.push('${value}')`); // execute script after document ready.
 }
 
-document.eval('new Date()').then(function(clientTime){
+document.execute('new Date()').then(function(clientTime){
     console.log(clientTime);
 });
 ```
@@ -127,7 +128,7 @@ Iterate over elements, executing a function for each matched element.
 
 ```
 
-### element.getFormData
+### element.formData
 ```javascript
 
 ```

@@ -86,8 +86,8 @@ class Document {
 
     }
 
-    script(attribute) {
-        return this.sendActionPromise('script', attribute);
+    execute(attribute) {
+        return this.sendActionPromise('execute', attribute);
     }
 
     render() {
